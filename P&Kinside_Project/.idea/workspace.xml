@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
@@ -83,7 +84,7 @@
       <workItem from="1683190521340" duration="23000" />
       <workItem from="1683190675082" duration="13000" />
       <workItem from="1683191534273" duration="1792000" />
-      <workItem from="1683345232863" duration="1339000" />
+      <workItem from="1683345232863" duration="2429000" />
     </task>
     <servers />
   </component>
