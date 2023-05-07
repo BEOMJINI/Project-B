@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>게시판메인페이지</title>
-</head>
-<body>
-        <h1>게시판 메인</h1>
-        <div id="">
-
-        </div>
-
-</body>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="layout/main_layout">
+<th:block layout:fragmen="content">
+        <h2>
+                본문작성영역
+        </h2>
+</th:block>
 </html>
