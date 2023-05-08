@@ -2,8 +2,10 @@ package org.board.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 
 
 @Data
@@ -26,5 +28,8 @@ public class Reply {
     @JoinColumn(name = "board_num")
     @JsonIgnore //stackoverflow 방지
     private Board board;
+
+    @CreationTimestamp //값이 입력될때 혹은 업데이트될때 자동으로 시간이 들어간다.
+    private Timestamp createDate;
 
     }
