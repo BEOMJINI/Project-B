@@ -15,13 +15,19 @@
             background: #5c636a;
         }
 
+        #content{
+            height: 60%;
+            color: #0b5ed7;
+            background: #0b5ed7;
+        }
+
     </style>
 
 </head>
 <body>
     <div>test</div>
     <th:block th:replace="fragments/header"></th:block>
-    <div layout:fragment="content"></div>
+    <div id="content" layout:fragment="content"></div>
     <th:block th:replace="fragments/footer"></th:block>
 </body>
 </html>
