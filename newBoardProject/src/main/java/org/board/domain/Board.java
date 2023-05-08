@@ -5,9 +5,10 @@ import lombok.Data;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity
 @Data
+@Entity
 public class Board {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "board_num")
@@ -24,6 +25,5 @@ public class Board {
 
     private Date date;//작성날짜
 
-    private int read; //조회수
-
+    private int count; //조회수
 }

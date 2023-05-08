@@ -1,14 +1,17 @@
 package org.board.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity
+
 @Data
+@Entity
 public class Reply {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; //댓글 PK
 
     private String writer; //작성자
@@ -19,8 +22,9 @@ public class Reply {
 
     private String contents; //댓글내용
 
-    @ManyToOne //하나의 게시글에 여러개의 답변
+    @ManyToOne(fetch = FetchType.LAZY) //하나의 게시글에 여러개의 답변
     @JoinColumn(name = "board_num")
+    @JsonIgnore //stackoverflow 방지
     private Board board;
 
     }
