@@ -1,14 +1,17 @@
 package org.board.domain;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-public class board {
+@Data
+public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "board_num")
-    private Long id; //게시글 순번
+    private Long id; //게시글 PK
 
     private String writer ; //작성자
 
