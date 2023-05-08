@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,20 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>test-layout</title>
     <th:block th:replace="fragments/config"></th:block>
-
-    <style>
-        #test{
-
-            color: #595959;
-            background: #5c636a;
-        }
-    </style>
-
 </head>
 <body>
-    <div id="test">
-        <th:block th:replace="fragments/header"></th:block>
-        <th:block layout:fragment="content"></th:block>
-    </div>
+    <div>test</div>
+    <th:block th:replace="fragments/header"></th:block>
+    <div layout:fragment="content"></div>
+
 </body>
 </html>
