@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,6 +12,7 @@
 <body>
     <div>test</div>
     <th:block th:replace="fragments/header"></th:block>
-    <th:block layout:fragment="content"></th:block>
+    <div layout:fragment="content"></div>
+
 </body>
 </html>
