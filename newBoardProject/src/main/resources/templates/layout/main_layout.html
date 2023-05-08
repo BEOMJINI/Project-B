@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org"
-xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<th:block th:replace="fragments/header :: headerFragment">
-
-
-</th:block>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test-layout</title>
+    <th:block th:replace="fragments/config"></th:block>
+</head>
 <body>
+    <div>test</div>
+    <th:block th:replace="fragments/header"></th:block>
     <th:block layout:fragment="content"></th:block>
-
 </body>
-
 </html>
