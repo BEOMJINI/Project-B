@@ -1,7 +1,6 @@
 package org.board.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Data;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,9 +17,14 @@ public class IntegrationBoard {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; //PK
 
-    private String categoryName; // 카테고리 이름
+    private String category_Name; // 카테고리 이름
 
-    private boolean check_Approval;
+    private boolean check_Approval; // 게시판 사용 승인
+
+    public IntegrationBoard(String category_Name){
+        this.category_Name = category_Name;
+        check_Approval = false;
+    }
 
 
 }
