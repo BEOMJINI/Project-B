@@ -1,5 +1,6 @@
 package org.board.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -32,4 +33,10 @@ public class Board {
     private Timestamp createDate;
 
     private int count; //조회수
+
+    @ManyToOne
+    @JoinColumn(name = "integration_Id")
+    @JsonIgnore //stackoverflow 방지
+    private IntegrationBoard integrationBoard;
+
 }
