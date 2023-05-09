@@ -12,10 +12,10 @@ public class MenuController {
         return "pages/kimEditor" ;
     }
 
-    @GetMapping("/parkEditor")
+    @GetMapping("/ParkEditor")
     public String parkEditor(){
 
-        return "pages/parkEditor";
+        return "pages/ParkEditor";
     }
 
 
