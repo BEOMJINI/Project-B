@@ -21,6 +21,6 @@ public class Main {
         hiber.configure(Hibernate5Module.Feature.FORCE_LAZY_LOADING ,true);
         //지연로딩 : 필요한 거만 가져옴 <-> EAGER : 그냥 무조건 다 가져옴
         return  hiber;
-        //JSON으로 직렬화할 때 연결의 지연 로드를 강제
+        //JSON으로 직렬화할 때 연S결의 지연 로드를 강제
     }
 }

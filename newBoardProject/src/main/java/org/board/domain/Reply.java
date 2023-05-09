@@ -25,8 +25,8 @@ public class Reply {
     private String contents; //댓글내용
 
     @ManyToOne(fetch = FetchType.LAZY) //하나의 게시글에 여러개의 답변
-    @JoinColumn(name = "board_num")
-    @JsonIgnore //stackoverflow 방지
+    @JoinColumn(name = "board_Num")
+    @JsonIgnore //stackoverSflow 방지
     private Board board;
 
     @CreationTimestamp //값이 입력될때 혹은 업데이트될때 자동으로 시간이 들어간다.

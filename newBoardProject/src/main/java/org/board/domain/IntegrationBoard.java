@@ -2,10 +2,13 @@ package org.board.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 
-@Data
+@Setter
+@Getter
 @Entity
 public class IntegrationBoard {
     //게시판 종류를 관리해주기 위한 클래스이다.
@@ -13,14 +16,11 @@ public class IntegrationBoard {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id; //PK
 
     private String categoryName; // 카테고리 이름
 
-    @ManyToOne
-    @JoinColumn(name = "board_num")
-    @JsonIgnore //stackoverflow 방지
-    private Board board;
+    private boolean check_Approval;
+
 
 }
