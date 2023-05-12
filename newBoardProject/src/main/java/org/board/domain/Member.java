@@ -11,8 +11,10 @@ public class Member {
 
     private String userId;
 
-    private int pw;
+    private String pw;
 
-    private Enum Role;
+    private String Nickname;
+
+    private Role Role;
 
 }

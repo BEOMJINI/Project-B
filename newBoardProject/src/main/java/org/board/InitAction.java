@@ -27,10 +27,10 @@ class InitService{
     
     public void EarlySettingBoard(){
         System.out.println("초기 작업 실행");
-        String BoardCategory[] = {"자유게시판" , "park게시판" , "kim게시판"};
-        for (int i = 0 ; i < BoardCategory.length ; i++){
+        String[] BoardCategory = {"자유게시판" , "park게시판" , "kim게시판"};
+        for (String s : BoardCategory) {
             IntegrationBoard integrationBoard = new IntegrationBoard(
-                    BoardCategory[i]);
+                    s);
             em.persist(integrationBoard);
         }
 
