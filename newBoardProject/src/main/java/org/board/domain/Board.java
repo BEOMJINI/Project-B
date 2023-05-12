@@ -17,7 +17,9 @@ public class Board {
     private Long id; //게시글 PK
 
     private String editor; // 보드 에디터종류
-    
+
+    private int type; //공지,일반
+
     private String category; //보드카테고리 -> 자유게시판,ㅇㅇ게시판
 
     private String writer ; //작성자

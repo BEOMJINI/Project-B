@@ -7,12 +7,12 @@ import javax.persistence.Id;
 public class Member {
 
     @Id
-    Long id; //멤버 pk
+    private Long id; //멤버 pk
 
-    String userId;
+    private String userId;
 
-    int pw;
+    private int pw;
 
-    Enum Role;
+    private Enum Role;
 
 }
