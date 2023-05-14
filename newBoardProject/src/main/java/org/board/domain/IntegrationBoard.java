@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Setter
 @Getter
 @Entity
-public class IntegrationBoard {
+public class IntegrationBoard{
     //게시판 종류를 관리해주기 위한 클래스이다.
     //게시판 종류에 따라 추가/삭제 기능을 해주기 위한 클래스이다.
 
@@ -26,5 +26,6 @@ public class IntegrationBoard {
         check_Approval = false;
     }
 
-
+    public IntegrationBoard() {
+    }
 }
