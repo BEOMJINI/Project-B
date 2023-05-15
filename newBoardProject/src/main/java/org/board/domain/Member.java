@@ -1,11 +1,10 @@
 package org.board.domain;
 
 import lombok.*;
+import org.board.dto.MemberDto;
 import org.springframework.util.Assert;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -15,6 +14,7 @@ import javax.validation.constraints.NotNull;
 public class Member {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; //멤버 pk
     @NotNull
     @Column(length = 20, unique = true)
@@ -41,5 +41,7 @@ public class Member {
         this.nickname = nickname;
         this.role = role;
     }
+
+
 
 }
