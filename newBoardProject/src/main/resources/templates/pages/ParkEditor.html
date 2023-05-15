@@ -3,9 +3,14 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="layout/main_layout">
 <div layout:fragment="content">
-    <h2>
-        본문작성영역
-    </h2>
-    <div>url-test</div>
+    <h1>CKEditor</h1>
+    <form action="" method="POST">
+        <textarea name="text" id="editor"></textarea>
+        <p><input type="submit" value="전송"></p>
+    </form>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor.create( document.querySelector( '#editor' ) );
+    </script>
 </div>
 </html>
