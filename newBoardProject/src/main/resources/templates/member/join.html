@@ -2,20 +2,34 @@
 <html lang="en"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="layout/main_layout">
-<script type="text/javascript" src="/js/join.js"></script>
+
 <div layout:fragment="content">
+    <script type="text/javascript" src="/js/join.js"></script>
     <div class="container">
-        <h1>Sign in</h1>
-        <form>
-          <div>
-            <label for="test" class="label-test">id</label>
-            <input type="text" id="test" class="input-test">
-            <label for="test2" class="label-test">password</label>
-            <input type="text" id="test2" class="input-test">
-            <label for="test3" class="label-test">nickname</label>
-            <input type="text" id="test3" class="input-test">
-          </div>
-        </form>
+        <div class="login-box">
+            <h2>Sign in</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>ID</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Nickname</label>
+                </div>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                </a>
+            </form>
+        </div>
     </div>
 </div>
 </html>
