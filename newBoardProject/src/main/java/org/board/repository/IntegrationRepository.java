@@ -1,4 +1,4 @@
-package org.board.Repository;
+package org.board.repository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
