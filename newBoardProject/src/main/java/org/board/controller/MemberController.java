@@ -5,6 +5,7 @@ import org.board.domain.Member;
 import org.board.domain.Role;
 
 
+import org.board.dto.MemberDto;
 import org.board.service.MemberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,14 +26,19 @@ public class MemberController {
     }
     @PostMapping("/join")
     @ResponseBody
-    public String test () {
-        Member member = Member.ByMemberJoinBuilder()
-                .nickname("2")
+    public String save () {
+        MemberDto.join memberDto = MemberDto.join.builder()
                 .userId("2")
                 .password("2")
+                .nickname("2")
+                .build();
+        Member member = Member.ByMemberJoinBuilder()
+                .nickname(memberDto.getNickname())
+                .userId(memberDto.getUserId())
+                .password(memberDto.getPassword())
                 .role(Role.USER)
                 .build();
-        memberService.test(member);
+        memberService.save(member);
         return member.getUserId() + "가입 축하";
     }
 }

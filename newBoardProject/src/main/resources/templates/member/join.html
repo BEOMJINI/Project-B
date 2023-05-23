@@ -8,17 +8,17 @@
     <div class="container">
         <div class="login-box">
             <h2>Sign in</h2>
-            <form>
+            <form method="post" action="/member/join">
                 <div class="user-box">
-                    <input type="text" name="" required="">
+                    <input type="text" name="userId" required="id 미입력">
                     <label>ID</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" name="" required="">
+                    <input type="password" name="password" required="password 미입력">
                     <label>Password</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" name="" required="">
+                    <input type="text" name="nickname" required="nickname 미입력">
                     <label>Nickname</label>
                 </div>
                 <a href="#">

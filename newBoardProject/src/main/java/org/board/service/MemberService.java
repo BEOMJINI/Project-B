@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class MemberService {
     private final MemberRepository memberRepository;
 
-    public void test (Member member){
+    public void save (Member member){
         memberRepository.save(member);
     }
 
