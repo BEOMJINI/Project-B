@@ -1,3 +1,9 @@
 .dropdown-toggle::after {
     display: none;
 }
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: solid 1px;
+}

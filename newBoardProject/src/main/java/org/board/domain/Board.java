@@ -18,7 +18,7 @@ public class Board {
 
     private String editor; // 보드 에디터종류
 
-    private int type; //공지,일반
+    private BoardType boardType;
 
     private String category; //보드카테고리 -> 자유게시판,ㅇㅇ게시판
 
